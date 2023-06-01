@@ -15,9 +15,10 @@ Egy erőforrás felszabadítása során a szimulátor az arra várakozó taszkok
 ## Bemenet (standard input, stdin)
 Soronként egy-egy taszk nevét és ütemenkénti utasításait tartalmazza a következők szerint:
 
-T1, T2, T3, ... taszkok nevei (egy szóköz nélküli karakterfüzér)
-R1, R2, R3, ... erőforrások nevei (egy szóköz nélküli karakterfüzér)
-"+R1": erőforrás-foglalási kérés, "-R1": erőforrás-felszabadítási utasítás, "0" egyéb művelet
+- T1, T2, T3, ... taszkok nevei (egy szóköz nélküli karakterfüzér)
+- R1, R2, R3, ... erőforrások nevei (egy szóköz nélküli karakterfüzér)
+- "+R1": erőforrás-foglalási kérés, "-R1": erőforrás-felszabadítási utasítás, "0" egyéb művelet
+
 pl.: a "T1,+R1,0,0,+R2,-R1,-R2" sorozat értelmezése: a T1 taszk elsőként szeretné lefoglalni R1-et, azután két ütemben más tevékenységet végez, majd foglalási kérést ad ki R2-re, azután felszabadítja R1-et, végül R2-t is.
 
 Egy teljes bemeneti példa:
